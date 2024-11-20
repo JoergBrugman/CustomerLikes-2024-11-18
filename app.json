@@ -1,0 +1,39 @@
+{
+  "id": "9c2d0166-9793-46b9-886a-40d245487de1",
+  "name": "Customer Like",
+  "publisher": "get&use Academy GmbH",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "25d91f52-7ea7-4c77-9bb4-5cd3e48200b8",
+      "name": "Bookstore",
+      "publisher": "get&use Academy GmbH",
+      "version": "1.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "24.0.0.0",
+  "idRanges": [
+    {
+      "from": 50200,
+      "to": 50249
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "13.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
