@@ -17,4 +17,30 @@ codeunit 50200 "BSBC Subscriber Store"
         IsHandled := true;
     end;
 
+    [EventSubscriber(ObjectType::Page, Page::"BSB Book List", OnBeforeHandleType, '', false, false)]
+    local procedure "BSB Book List_OnBeforeHandleType"(Rec: Record "BSB Book"; var IsHandled: Boolean)
+    begin
+        if IsHandled then
+            exit;
+
+        if Rec.Type = "BSB Book Type"::eBook then begin
+            Step1();
+            Step2();
+            IsHandled := true;
+        end;
+
+    end;
+
+    local procedure Step1()
+    begin
+        Message('Auf Kundenportal bereitstellen');
+    end;
+
+    local procedure Step2()
+    begin
+        Message('Mail an den Kunden für Download');
+    end;
+
+
+
 }
